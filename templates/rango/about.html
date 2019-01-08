@@ -1,0 +1,18 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block title_block %}
+    About
+{% endblock %}
+{% block body_block %}
+    <body>
+        <h1>Rango About</h1>
+        <div>
+            <strong>Developed with Django 1.9 and SQLite.</strong></br>
+        </div>
+        <div>
+            <a href='{% url 'index' %}'>Index</a>
+        </div>
+            <img src="{% static "images/rango.jpg" %}" alt="Picture of Rango"/>
+    </body>
+</html>
+{% endblock %}
