@@ -8,8 +8,9 @@ from django.http import HttpResponse
 
 def about(request):
     # return HttpResponse("This tutorial has been put together by<a href='/rango/'>Index</a>")
-    return render(request, 'rango/about.html')
-
+    print(request.user)
+    print(request.method)
+    return render(request, 'rango/about.html', {})
 
 def index(request):
     # Query the database for a list of ALL categories currently stored. 
